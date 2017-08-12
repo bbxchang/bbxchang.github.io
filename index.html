@@ -4,14 +4,24 @@
     <title>Brian Chang - Student Journalist</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+      h1 {
+        position:absolute;
+        top:50%;
+        left:50%;
+        text-align:center;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      .image {
+        position: relative;
+        float: left;
+      }
       .background {
         width: 100%;
-        height: auto;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-right: 0px;
       }
-
       @media (max-width: 500px) {
       .graphic {
         width: 100%;
@@ -28,5 +38,10 @@
     </style>
   </head>
   <body>
-    <img class="background" src="background.jpg" alt="NU Sunrise">
+    <div class="header">
+      <header id="header">
+         <h1>Student journalist</h1>
+      </header>
+      <img class="background" src="background.jpg" alt="NU Sunrise">
+    </div>
   </body>
