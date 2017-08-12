@@ -14,6 +14,17 @@
         left:50%;
         text-align:center;
         transform: translateX(-50%) translateY(-50%);
+        color: #FDFEFE;
+        font-size: 50px;
+      }
+      h2 {
+        position:absolute;
+        top:50%;
+        left:50%;
+        text-align:center;
+        transform: translateX(-50%) translateY(100%);
+        color: #FDFEFE;
+        font-size: 30px;
       }
       .image {
         position: relative;
@@ -39,9 +50,33 @@
   </head>
   <body>
     <div class="header">
-      <header id="header">
-         <h1>Student journalist</h1>
-      </header>
+      <h1>Student journalist</h1>
       <img class="background" src="background.jpg" alt="NU Sunrise">
+      <h2>Writing about news and eSports</h2>
     </div>
+    <div id="page1">
+    <a id="about" class="smooth"></a>
+      I'm a senior at Diamond Bar High School in Diamond Bar, CA, about an hour's drive south of Los Angeles. I'm a News Editor at The Bull's Eye, my school paper, and the eSports Editor at Second Floor Sports.
+    </div>
+    <div id="page2">
+      <a id="portfolio" class="smooth"></a>
+        Check out some of my work!
+          <a href="http://dbbullseye.com/staff/?writer=Brian_Chang">The Bull's Eye</a>
+          <a href="https://secondfloorsports.com/category/pro-sports/esports/">Second Floor Sports</a>
+    </div>
+    <div id="page3">
+      <a id="contact" class="smooth"></a>
+        Contact page content goes here.
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    <script>
+    $('.smooth').on('click', function() {
+        $.smoothScroll({
+            scrollElement: $('body'),
+            scrollTarget: '#' + this.id
+        });
+        return false;
+    });
+    </script>
   </body>
