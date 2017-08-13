@@ -10,22 +10,19 @@
         margin: 0px;
         font-family: 'Just Another Hand', cursive;
       }
-      h1 {
+      .header {
         position:absolute;
         top:50%;
         left:50%;
         text-align:center;
-        transform: translateX(-50%) translateY(-50%);
         color: #FDFEFE;
+      }
+      h1 {
+        transform: translateX(-50%) translateY(-50%);
         font-size: 100px;
       }
       h2 {
-        position:absolute;
-        top:50%;
-        left:50%;
-        text-align:center;
         transform: translateX(-50%) translateY(100%);
-        color: #FDFEFE;
         font-size: 70px;
       }
       h3 {
@@ -61,12 +58,6 @@
         height: 25vh;
         margin-left: 25px;
       }
-      .footer {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-        column-fill: auto;
-      }
       .column {
         -webkit-column-count: 2;
         -moz-column-count: 2;
@@ -81,26 +72,20 @@
         margin-bottom: 25px;
       }
       @media (max-width: 500px) {
-      .graphic {
+      .background {
         width: 100%;
       }
-      .graphic .pano {
-        width: 100%;
-        margin-left: 0%;
-      }
-      .graphic h3 {
-        width: 100%;
-        margin-left: 0%;
-      }
+      .header{
+        transform: translateX(-50%) translateY(-25%);
       }
     </style>
   </head>
   <body>
     <div class="header">
       <h1>Student journalist</h1>
-      <img class="background" src='https://lh3.googleusercontent.com/tfgo688-fsxYQt6ep0dzDcLRIzPGJ3lEmJev2duCLZkVHcRQsB_sDA' /></a>
       <h2>Writing about news and eSports</h2>
     </div>
+    <img class="background" src='https://lh3.googleusercontent.com/tfgo688-fsxYQt6ep0dzDcLRIzPGJ3lEmJev2duCLZkVHcRQsB_sDA' /></a>
     <div id="page1">
     <a id="about" class="smooth"></a>
       <div class="column">
@@ -126,7 +111,7 @@
     <div id="page3">
       <a id="contact" class="smooth"></a>
         <div>
-          <div class="footer">
+          <div class="column">
             <h3>Get in contact</h3>
             <p>Is there a project you want me to work on? Do you have any questions or concerns about my past work? Just want to talk about League? Shoot me a quick email and we can talk!</p>
             <h3>Follow me!<h3>
